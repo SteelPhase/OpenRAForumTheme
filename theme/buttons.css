@@ -29,6 +29,7 @@
 
 .caret {
 	border-left: 1px solid;
+	border-color: #ffd752;
 	position: relative;
 	right: -6px;
 }

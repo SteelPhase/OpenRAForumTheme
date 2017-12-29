@@ -47,16 +47,16 @@ input:-webkit-autofill {
 }
 
 .site-description h1 {
-	color:#333;
+	color: #FFFFFF;
 }
 
 .site-description p {
 	font-size:1.5em;
-	color:#d60;
+	color:#650b03;
 }
 
 .icon {
-	color:#d60;
+	color:#650b03;
 }
 
 .button .icon {
@@ -65,7 +65,7 @@ input:-webkit-autofill {
 }
 
 .navbar-top, .navbar-bottom {
-    background-color: #333;
+    /* background-color: #333; */
 	font-weight:bold;
 }
 
@@ -79,7 +79,7 @@ input:-webkit-autofill {
 }
 
 .navbar-top a:hover, .navbar-bottom a:hover {
-	color:#d60;
+	color:#650b03;
 }
 
 .header-avatar span {
@@ -87,7 +87,7 @@ input:-webkit-autofill {
 }
 
 .header-avatar span::after {
-	color:#d60;
+	color:#650b03;
 }
 
 .stat-block {
@@ -95,7 +95,7 @@ input:-webkit-autofill {
 }
 
 .stat-block h3 {
-	color:#333;
+	color:white;
 	margin-top:0;
 	text-transform:none;
 	border-bottom:0;

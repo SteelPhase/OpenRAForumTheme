@@ -4,8 +4,10 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #333;
-	background-color: #fff;
+	color: white;
+	background-color: black;
+	background-image: url("/images/bg.svg");
+	background-attachment: fixed;
 }
 
 h1 {
@@ -13,12 +15,12 @@ h1 {
 }
 
 h2 {
-	color: #333;
+	color: white;
 }
 
 h3 {
 	border-bottom-color: #CCCCCC;
-	color: #333;
+	color: white;
 }
 
 hr {
@@ -31,12 +33,12 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #333; }
-a:hover { color: #d60; }
+a { color: white; }
+a:hover { color: #650b03; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
-	color: #FFFFFF;
+	color: white;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
@@ -81,8 +83,11 @@ a:hover { color: #d60; }
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
-	background-color: #FFF;
-	border-color: #E6E9ED;
+	/* background-color: #FFF; */
+	/* border-color: #E6E9ED; */
+	background:rgba(51, 51, 51, 0.4);
+	border: 3px solid #650b03;
+	margin-top: 20px;
 }
 
 .headerbar {
@@ -90,20 +95,22 @@ a:hover { color: #d60; }
 }
 
 .headerbar {
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 .forabg, .forumbg {
-	background-color: #333;
+	/* background-color: #333; */
 }
 
 .navbar {
-	background-color: #eee;
+	/* background-color: #eee; */
+ 	/* background: rgba(51, 51, 51, 0.4); */
+	color: white;
 }
 
 .panel {
-	background-color: #eee;
-	color: #333;
+	/* background-color: #eee; */
+	color:white;
 }
 
 .post:target .content {
@@ -115,23 +122,23 @@ a:hover { color: #d60; }
 }
 
 .bg1 {
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 .bg2 {
-	background-color: #f4f4f4;
+	/* background-color: #f4f4f4; */
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
-	background-color: #f4f4f4;
+	/* background-color: #f4f4f4; */
 }
 
 .bg3	{
-	background-color: #f1f1f1;
+	/* background-color: #f1f1f1; */
 }
 
 .ucprowbg {
@@ -179,7 +186,7 @@ table.info tbody th {
 /* Misc layout styles
 ---------------------------------------- */
 dl.details dt {
-	color: #000000;
+	color: white;
 }
 
 dl.details dd {
@@ -301,15 +308,20 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 ul.topiclist li {
-	color: #333;
+	color: white;
+	/* 
+	TODO: do we need a background color?
+	background-color:white;
+	background-color: #272d2c; 
+	*/
 }
 
 ul.topiclist dd {
-	border-left-color: #FFFFFF;
+	border-left-color: #650b03;
 }
 
 .rtl ul.topiclist dd {
@@ -322,7 +334,7 @@ li.row {
 }
 
 li.row strong {
-	color: #000000;
+	color: #FFFFFF;
 }
 
 /*
@@ -347,22 +359,22 @@ li.header dt, li.header dd {
 /* Post body styles
 ----------------------------------------*/
 .postbody {
-	color: #333333;
+	color: white;
 }
 
 /* Content container styles
 ----------------------------------------*/
 .content {
-	color: #333333;
+	color: white;
 }
 
 .content h2, .panel h2 {
-	color: #333;
+	color: white;
 	border-bottom-color:  #CCCCCC;
 }
 
 dl.faq dt {
-	color: #333333;
+	color: white;
 }
 
 .posthilit {
@@ -538,8 +550,8 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-	color: #666666;
-	border-color: #FFFFFF;
+	color: white;
+	border-color: #650b03;
 }
 
 .pm .postprofile {
@@ -547,7 +559,7 @@ fieldset.polls dd div {
 }
 
 .postprofile strong {
-	color: #000000;
+	color: white;
 }
 
 .online {
@@ -563,41 +575,42 @@ dd.profile-warnings {
 Colours and backgrounds for buttons.css
 -------------------------------------------------------------- */
 .button {
-	border-color: #C7C3BF;
-	background-color: #fafafa;
-	color: #333;
+	background-color: #650b03;
+	color: white;
 }
 
 .button:hover, .button:focus {
-	color: #d60;
-	background-color: #fff;
-	border-color: #d60;
+	color: #ffd752;
+	background-color: #650b03;
 }
 
 .button:active {
-	color:#fff;
-	background-color:#d60;
+	color:white;
+	background-color:#650b03;
 }
 
 .button .icon,
 .button-secondary {
-	color: #333;
+	color: white;
 }
 
 .button-secondary:focus,
 .button-secondary:hover,
 .button:focus .icon,
 .button:hover .icon {
-	color: #d60;
+	color: #ffd752;
 }
-
+.button:active .icon {
+	color: white;
+}
 .button-search:hover,
 .button-search-end:hover {
-	border-color: #C7C3BF;
+	/* border-color: #C7C3BF; */
 }
 
 .caret	{ border-color: #DADADA; }
 .caret	{ border-color: #C7C3BF; }
+.caret:hover { border-color: #ffd752; }
 
 .contact-icons a		{ border-color: #DCDCDC; }
 .contact-icons a:hover	{ background-color: #fec; }
@@ -828,11 +841,11 @@ ul.cplist {
 /* Preferences pane layout
 ----------------------------------------*/
 .panel-container h2 {
-	color: #333333;
+	color: white;
 }
 
 .panel-container .panel {
-	background-color: #F9F9F9;
+	/* background-color: #F9F9F9; */
 }
 
 .cp-main .pm {
@@ -901,7 +914,7 @@ select {
 }
 
 label {
-	color: #333;
+	color: white;
 }
 
 option.disabled-option {
@@ -911,7 +924,7 @@ option.disabled-option {
 /* Definition list layout for forms
 ---------------------------------------- */
 dd label {
-	color: #333;
+	color: white;
 }
 
 fieldset.fields1 {
@@ -920,11 +933,11 @@ fieldset.fields1 {
 
 /* Hover effects */
 fieldset dl:hover dt label {
-	color: #000000;
+	/* color: #000000; */
 }
 
 fieldset.fields2 dl:hover dt label {
-	color: inherit;
+	color:white;
 }
 
 /* Quick-login on index page */
@@ -984,12 +997,12 @@ fieldset.quick-login input.inputbox {
 ---------------------------------------- */
 
 a.button1, input.button1, input.button3, a.button2, input.button2 {
-	color: #333;
-	background-color: #fafafa;
+	color: white;
+	background-color: #650b03;
 }
 
 a.button1, input.button1 {
-	border-color: #666666;
+	border-color: #650b03;
 }
 
 input.button3 {
@@ -998,7 +1011,7 @@ input.button3 {
 
 /* Alternative button */
 a.button2, input.button2, input.button3 {
-	border-color: #666666;
+	border-color: #650b03;
 }
 
 /* <a> button in the style of the form buttons */
@@ -1008,16 +1021,16 @@ a.button1, a.button2 {
 
 /* Hover states */
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-	border-color: #d60;
-	color: #d60;
-	background-color:#fff;
+	border-color: #650b03;
+	color: white;
+	background-color:#650b03;
 }
 
 /* Focus states */
 input.button1:focus, input.button2:focus, input.button3:focus {
-	border-color: #d60;
-	color: #fff;
-	background-color: #d60;
+	border-color: #650b03;
+	color: white;
+	background-color: #650b03;
 }
 
 input.disabled {

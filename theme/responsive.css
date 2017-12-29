@@ -135,8 +135,8 @@
 	}
 
 	.wrap {
-		border: none;
-		border-radius: 0;
+		background: rgba(51, 51, 51, 0.4);
+		border: 3px solid #650b03;
 		margin: 0;
 		min-width: 290px;
 		padding: 0 5px;

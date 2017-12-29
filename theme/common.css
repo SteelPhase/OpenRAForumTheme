@@ -479,6 +479,7 @@ a.header-avatar span:after {
 .dropdown-contents a {
 	display: block;
 	padding: 5px;
+	color: black;
 }
 
 .jumpbox {
@@ -507,6 +508,7 @@ a.header-avatar span:after {
 	padding: 5px 10px;
 	text-decoration: none;
 	width: 100%;
+	color: black;
 }
 
 .jumpbox .spacer {
